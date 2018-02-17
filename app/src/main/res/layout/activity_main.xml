@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#82B1FF">
+
+    <ImageView
+        android:id="@+id/i_v_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/name_of"
+        android:src="@drawable/cbs_glazov_cr" />
+
+    <ImageView
+        android:layout_width="@dimen/_80dp"
+        android:layout_height="@dimen/_100dp"
+        android:layout_above="@+id/scrollView2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="@dimen/_60dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:src="@drawable/korolenko" />
+
+    <TextView
+        android:id="@+id/t_v_1"
+        android:layout_width="@dimen/_300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/i_v_1"
+        android:padding="@dimen/_16dp"
+        android:text="@string/name_of"
+        android:textColor="#FFFDE7"
+        android:textSize="@dimen/_28sp"
+        android:textStyle="bold|italic" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/t_v_1"
+        android:background="#FFFDE7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_16dp"
+            android:orientation="vertical"
+            tools:context="com.example.android.businesscard.MainActivity">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_0dp"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="@string/we_open"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_20sp" />
+
+            <View
+                android:id="@+id/v_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1dp"
+                android:layout_below="@id/t_v_1"
+                android:layout_marginBottom="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:background="#82B1FF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_0dp"
+                android:layout_weight="1"
+                android:autoLink="map"
+                android:drawableStart="@drawable/location_pin_48"
+                android:gravity="center_vertical"
+                android:text="@string/map"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_16" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_0dp"
+                android:layout_marginLeft="@dimen/_8dp"
+                android:layout_weight="1"
+                android:autoLink="phone"
+                android:drawablePadding="@dimen/_10dp"
+                android:drawableStart="@drawable/phone_36"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_4dp"
+                android:text="@string/phone"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_16" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_0dp"
+                android:layout_weight="1"
+                android:autoLink="web"
+                android:drawableStart="@drawable/globe_48"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_4dp"
+                android:text="@string/biblio"
+                android:textSize="@dimen/_16" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_0dp"
+                android:layout_marginBottom="@dimen/_16"
+                android:layout_weight="1"
+                android:autoLink="email"
+                android:drawableStart="@drawable/mail"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_4dp"
+                android:text="@string/mail"
+                android:textSize="@dimen/_16" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Business card</string>
+    <string name="map">Kalinin st, 4a, Glazov, Udmurt Republic, Russia</string>
+    <string name="phone"> (34141) 2-16-77</string>
+    <string name="biblio">http://bic-biblio.ru</string>
+    <string name="mail">biblio-yr@yandex.ru</string>
+    <string name="name_of">Korolenko Public Scientific Library</string>
+    <string name="we_open">We open for visitors from Monday to Friday 10:00 a.m. – 8:00 p.m. Closed on Saturday.</string>
+
+</resources>
